@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Boston house price prediction</title>
+
+    </head>
+    <body>
+        <h1 style=green><b><u>Boston House Price Prediction</u></b></h1><br>
+        <img src="https://thinkingneuron.com/wp-content/uploads/2020/09/Boston-house-price-prediction.png"><br>
+        {% if result%}
+            <p>charges:{{result}}$</p>
+        {% endif %}
+        
+
+        
+        <form method="POST" action="/predict">
+            <label>CRIM</label><br>
+            <input type="text" name="CRIM"><br><br>
+
+            <label>ZN</label><br>
+            <input type="text" name="ZN"><br><br>
+
+            <label>INDUS</label><br>
+            <input type="text" name="INDUS"><br><br>
+
+            <label>NOX</label><br>
+            <input type="text" name="NOX"><br><br>
+
+            <label>RM</label><br>
+            <input type="text" name="RM"><br><br>
+
+            <label>AGE</label><br>
+            <input type="text" name="AGE"><br><br>
+
+            <label>DIS</label><br>
+            <input type="text" name="DIS"><br><br>
+
+            <label>RAD</label><br>
+            <input type="text" name="RAD"><br><br>
+
+            <label>TAX</label><br>
+            <input type="text" name="TAX"><br><br>
+
+            <label>PTRATIO</label><br>
+            <input type="text" name="PTRATIO"><br><br>
+
+            <label>B</label><br>
+            <input type="text" name="B"><br><br>
+
+            <label>LSTAST</label><br>
+            <input type="text" name="LSTAT"><br><br>
+
+            <input type="submit" value="Predict"><br><br>
+        </form>
+
+    </body>
+
+</html>
